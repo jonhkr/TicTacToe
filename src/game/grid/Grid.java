@@ -8,9 +8,12 @@ import game.player.Player;
 public class Grid {
 	
 	private final Player EMPTY_POSITION = null;
-	private final Integer[][] WINNING_COMBOS = {{0,1,2},{3,4,5},{6,7,8},
-												{0,3,6},{1,4,7},{2,5,8},
-												{0,4,8},{2,4,6}};
+	private final Integer[][] WINNING_COMBOS = {
+		{0,1,2},{3,4,5},
+		{6,7,8},{0,3,6},
+		{1,4,7},{2,5,8},
+		{0,4,8},{2,4,6}
+	};
 	private Player[] grid;
 	private Player crosses = null;
 	private Integer[] winningCombo = null;
